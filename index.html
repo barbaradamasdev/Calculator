@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - The Odin Project</title>
+</head>
+<body>
+    <main>
+        <div class="screen">
+            <input class="space" type="number" id="space">
+            <input class="historic" type="text" id="historic">
+            <button onclick="clearNumber()" class="keyClear">Clear</button>
+        </div>
+        <div class="calculator">
+            <section class="numbers">
+                <button onclick="addNumber(id)" id="7" value="7">7</button>
+                <button onclick="addNumber(id)" id="8" value="8">8</button>
+                <button onclick="addNumber(id)" id="9" value="9">9</button>
+                <button onclick="addNumber(id)" id="4" value="4">4</button>
+                <button onclick="addNumber(id)" id="5" value="5">5</button>
+                <button onclick="addNumber(id)" id="6" value="6">6</button>
+                <button onclick="addNumber(id)" id="1" value="1">1</button>
+                <button onclick="addNumber(id)" id="2" value="2">2</button>
+                <button onclick="addNumber(id)" id="3" value="3">3</button>
+                <button class="keyNone">_</button>
+                <button onclick="addNumber(id)" id="0" value="0">0</button>
+                <button class="keyNone">_</button>
+            </section>
+            <section class="operators">
+                <button onclick="addOperator(value)" class="operatorsButton" value="+">+</button>
+                <button onclick="addOperator(value)" class="operatorsButton" value="-">-</button>
+                <button onclick="addOperator(value)" class="operatorsButton" value="*">*</button>
+                <button onclick="addOperator(value)" class="operatorsButton" value="/">%</button>
+                <button onclick="result()" id="keyEqual">=</button>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
